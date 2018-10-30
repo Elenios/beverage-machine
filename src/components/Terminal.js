@@ -1,7 +1,9 @@
 import React from 'react';
 
-const Terminal = () => (
+const Terminal = ( name, calories ) => (
+  <div>
 
+  </div>
 );
 
 export default Terminal;

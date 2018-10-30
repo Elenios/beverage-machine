@@ -4,16 +4,15 @@ import Terminal from './components/Terminal';
 import BeverageList from './components/BeverageList';
 
 
+
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
         <div className="App">
           <h1>Beverage Machine</h1>
           <Terminal />
           <BeverageList />
         </div>
-      </BrowserRouter>
     );
   }
 }
