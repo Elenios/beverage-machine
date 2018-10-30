@@ -10,8 +10,10 @@ class App extends Component {
     return (
         <div className="App">
           <h1>Beverage Machine</h1>
+          <div className="Machine">
           <Terminal />
           <BeverageList />
+          </div>
         </div>
     );
   }
