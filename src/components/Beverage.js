@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Beverage = (name, img) => (
+const Beverage = ( props ) => (
   <div className="container section beverage">
     <div className="card z-depth-0">
-    <p>{name}</p>
-<img alt={name} src={`../${img}`} />
+      <img alt={ props.name } src={ `../${props.img}` } />
     </div>
   </div>
 );
