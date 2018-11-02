@@ -5,8 +5,7 @@ import BeverageList from './components/BeverageList';
 
 
 
-class App extends Component {
-  render() {
+const App = () => {
     return (
         <div className="App">
           <h1>Beverage Machine</h1>
@@ -15,8 +14,7 @@ class App extends Component {
           <BeverageList />
           </div>
         </div>
-    );
-  }
-}
+    )
+  };
 
 export default App;
