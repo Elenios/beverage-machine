@@ -1,6 +1,6 @@
-export function terminalInfo() {
- return {
-  type: "SELECT_BEVERAGE",
-  payload,
-}
+export function selectBeverage( beverage ) {
+  return {
+    type: "SELECT_BEVERAGE",
+    beverage,
+  }
 };
