@@ -1,11 +1,11 @@
 import { connect } from 'react-redux';
 import App from '../App';
-import store from '../store';
+import database from '../database';
 
 const mapStateToProps = state => state;
 
 const mapDispatchToProps = dispatch => ({
-  getBeverage: store(dispatch),
+  getBeverage: () => database(dispatch),
 });
 
 const AppContainer = connect(

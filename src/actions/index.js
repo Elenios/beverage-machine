@@ -1,6 +1,6 @@
-export function selectBeverage( beverage ) {
+export default function selectBeverage( beverageInfo ) {
   return {
     type: "SELECT_BEVERAGE",
-    beverage,
+    beverageInfo,
   }
 };

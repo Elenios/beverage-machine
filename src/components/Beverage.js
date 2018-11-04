@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import selectBeverage from '../actions/index'
+import store from '../store';
 
-const Beverage = ( props ) => (
+const Beverage = ( props, getBeverage ) => (
   <div className="container section">
-      <img onClick={() => console.log('hello')} alt={ props.name } src={ require(`../${props.img}`)} />
+      <img onClick={console.log(store.dispatch(selectBeverage))} alt={ props.name } src={ require(`../${props.img}`)} />
   </div>
 );
 

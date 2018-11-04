@@ -1,12 +1,12 @@
 import React from 'react';
 
 const Terminal = ( beverage ) => {
+  console.log(beverage);
+  
   if ( beverage.length === 0 ) {
-    return ( "Quench your thirst with one of these refreshing beverages!" );
+    return <p>Quench your thirst with one of these refreshing beverages!</p>
   } else {
-    return beverage.map( element => (
-      <p key={ element.name }>{ element.calories }</p>
-    ) )
+    return <p key={ beverage.name }>{ beverage.calories }</p>
   }
 };
 
