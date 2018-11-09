@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import AppContainer from './components/AppContainer';
+import App from './App';
 import { Provider } from 'react-redux';
 import store from './store';
 import { BrowserRouter, Route } from 'react-router-dom';
@@ -16,7 +16,7 @@ ReactDOM.render(
   <Provider store={ store }>
     <BrowserRouter>
       <div>
-        <Route exact path="/" component={ AppContainer } />
+        <Route exact path="/" component={ App } />
         <Route path="/coke" component={ Coke } />
         {/* <Route path="/cokezero" component={ CokeZero } />
         <Route path="/fanta" component={ Fanta } />

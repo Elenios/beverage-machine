@@ -1,6 +1,7 @@
-export default function selectBeverage( beverageInfo ) {
+export default function selectBeverage( beverageID ) {
+  console.log(beverageID);
   return {
     type: "SELECT_BEVERAGE",
-    beverageInfo,
+    beverageID,
   }
 };
