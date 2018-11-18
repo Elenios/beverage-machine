@@ -6,11 +6,11 @@ import { Provider } from 'react-redux';
 import store from './store';
 import App from './App';
 import Coke from './components/Coke';
-// import CokeZero from './components/CokeZero';
-// import Fanta from './components/Fanta';
-// import Sprite from './components/Sprite';
-// import Kinley from './components/Kinley';
-// import DrPepper from './components/DrPepper';
+import CokeZero from './components/CokeZero';
+import Fanta from './components/Fanta';
+import Sprite from './components/Sprite';
+import Kinley from './components/Kinley';
+import DrPepper from './components/DrPepper';
 
 ReactDOM.render(
   <Provider store={ store }>
@@ -18,11 +18,11 @@ ReactDOM.render(
       <div>
         <Route exact path="/" component={App} />
         <Route path="/coke" component={Coke} />
-        {/* <Route path="/cokezero" component={ CokeZero } />
+        <Route path="/cokezero" component={ CokeZero } />
         <Route path="/fanta" component={ Fanta } />
         <Route path="/sprite" component={ Sprite } />
         <Route path="/kinley" component={ Kinley } />
-        <Route path="/drpepper" component={ DrPepper } /> */}
+        <Route path="/drpepper" component={ DrPepper } />
       </div>
     </BrowserRouter>
   </Provider>,
