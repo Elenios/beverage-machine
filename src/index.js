@@ -13,16 +13,16 @@ import Kinley from './components/Kinley';
 import DrPepper from './components/DrPepper';
 
 ReactDOM.render(
-  <Provider store={ store }>
+  <Provider store={store}>
     <BrowserRouter>
       <div>
         <Route exact path="/" component={App} />
         <Route path="/coke" component={Coke} />
-        <Route path="/cokezero" component={ CokeZero } />
-        <Route path="/fanta" component={ Fanta } />
-        <Route path="/sprite" component={ Sprite } />
-        <Route path="/kinley" component={ Kinley } />
-        <Route path="/drpepper" component={ DrPepper } />
+        <Route path="/cokezero" component={CokeZero} />
+        <Route path="/fanta" component={Fanta} />
+        <Route path="/sprite" component={Sprite} />
+        <Route path="/kinley" component={Kinley} />
+        <Route path="/drpepper" component={DrPepper} />
       </div>
     </BrowserRouter>
   </Provider>,

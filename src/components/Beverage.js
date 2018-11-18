@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Beverage = (props, { getBeverageInfo }) => (
   <div className="container section">
-    <img onClick={getBeverageInfo} alt={ props.name } src={ require( `../${props.img}` ) } />
+    <img alt={ props.name } src={require( `../${props.img}` )} />
   </div>
 );
 
