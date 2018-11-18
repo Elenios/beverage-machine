@@ -9,7 +9,7 @@ import Coke from './components/Coke';
 import CokeZero from './components/CokeZero';
 import Fanta from './components/Fanta';
 import Sprite from './components/Sprite';
-import Kinley from './components/Kinley';
+import Schweppes from './components/Schweppes';
 import DrPepper from './components/DrPepper';
 
 ReactDOM.render(
@@ -21,7 +21,7 @@ ReactDOM.render(
         <Route path="/cokezero" component={CokeZero} />
         <Route path="/fanta" component={Fanta} />
         <Route path="/sprite" component={Sprite} />
-        <Route path="/kinley" component={Kinley} />
+        <Route path="/schweppes" component={Schweppes} />
         <Route path="/drpepper" component={DrPepper} />
       </div>
     </BrowserRouter>
