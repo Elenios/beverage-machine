@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import AppContainer from './components/AppContainer';
+import { BrowserRouter, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './store';
-import { BrowserRouter, Route } from 'react-router-dom';
-import  Coke  from './components/Coke';
+import App from './App';
+import Coke from './components/Coke';
 // import CokeZero from './components/CokeZero';
 // import Fanta from './components/Fanta';
 // import Sprite from './components/Sprite';
@@ -16,8 +16,8 @@ ReactDOM.render(
   <Provider store={ store }>
     <BrowserRouter>
       <div>
-        <Route exact path="/" component={ AppContainer } />
-        <Route path="/coke" component={ Coke } />
+        <Route exact path="/" component={App} />
+        <Route path="/coke" component={Coke} />
         {/* <Route path="/cokezero" component={ CokeZero } />
         <Route path="/fanta" component={ Fanta } />
         <Route path="/sprite" component={ Sprite } />
@@ -26,5 +26,5 @@ ReactDOM.render(
       </div>
     </BrowserRouter>
   </Provider>,
-  document.getElementById( 'root' )
+  document.getElementById('root'),
 );

@@ -4,20 +4,20 @@ import BeverageList from './components/BeverageList';
 
 const style = {
   firstLayer: {
-    display: "flex",
-    justifyContent: "center"
+    display: 'flex',
+    justifyContent: 'center',
   },
   secondLayer: {
-    flexDirecton: "column"
-  }
+    flexDirecton: 'column',
+  },
 };
 
 const App = () => (
   <div className="center">
     <h1 className="red-text text-darken-2">Beverage Machine</h1>
-    <div style={ style.firstLayer }>
+    <div style={style.firstLayer}>
       <Terminal />
-      <div style={ style.secondLayer }>
+      <div style={style.secondLayer}>
         <BeverageList />
       </div>
     </div>

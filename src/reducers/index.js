@@ -1,7 +1,17 @@
-import { combineReducers } from 'redux';
-import terminalInfo from './terminalInfo'
+const defaultState = {
+  beverageDetails: [],
+}
 
-const rootReducer = combineReducers( {
-  terminalInfo,
-} );
-export default rootReducer;
+const beverageInfo = ( state = defaultState, action ) => {
+  switch ( action.type ) {
+    case "SELECT_BEVERAGE":
+    return Object.assign( {}, state, {
+      beverageDetails: action.beverageDetails,        
+    } );
+    default:
+    return state;
+  }
+};
+
+
+export default beverageInfo;
