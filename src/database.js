@@ -47,6 +47,6 @@ export default {
       calories: '29 kcal / 100 ml',
       smallimg: 'img/drpepper-small.png',
       largeimg: 'img/drpepper-large.jpg',
-    }
-  ]
+    },
+  ],
 };

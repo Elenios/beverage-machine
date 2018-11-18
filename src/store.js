@@ -1,6 +1,6 @@
 import { createStore } from 'redux';
-import beverageInfo from './reducers';
+import beverageInfo from './reducers/beverageInfo';
 
-const store = createStore( beverageInfo );
+const store = createStore(beverageInfo);
 
 export default store;

@@ -8,7 +8,7 @@ const Terminal = ({ beverageDetails }) => (
 );
 
 Terminal.propTypes = {
-  beverageDetails: PropTypes.arrayOf(PropTypes.string).isRequired,
+  beverageDetails: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default Terminal;
