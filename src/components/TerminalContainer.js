@@ -6,6 +6,6 @@ const mapStateToProps = state => state.beverageInfo;
 const TerminalContainer = connect(
   mapStateToProps,
   null,
-)( Terminal );
+)(Terminal);
 
 export default TerminalContainer;
