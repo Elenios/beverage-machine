@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Beverage from './Beverage';
+import BeverageList from './BeverageList';
 import database from '../database';
 import selectBeverage from '../actions/selectBeverage';
 
@@ -10,6 +10,6 @@ const mapDispatchToProps = dispatch => ({
 const BeverageContainer = connect(
   null,
   mapDispatchToProps,
-)(Beverage);
+)(BeverageList);
 
 export default BeverageContainer;

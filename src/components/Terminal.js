@@ -1,8 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Terminal = ( {beverageDetails} ) => {
-  console.log(beverageDetails);
-    return <p>Quench your thirst with one of these refreshing beverages!</p>
+const Terminal = ({ beverageDetails }) => (
+  <div>
+    {beverageDetails ? { beverageDetails } : <p>Select a beverage!</p>}
+  </div>
+);
+
+Terminal.propTypes = {
+  beverageDetails: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Terminal;
