@@ -1,14 +1,15 @@
 import React from "react";
-import BeverageContainer from "./BeverageContainer";
+import Beverage from "./Beverage";
 import store from "../database";
 
-const BeverageList = ({ beverages = store.database }) =>
+const BeverageList = ({ beverages = store.database, getBeverage }) =>
   beverages.map(beverage => (
-    <BeverageContainer
+    <Beverage
       key={beverage.id}
       id={beverage.id}
       name={beverage.name}
       img={beverage.smallimg}
+      onClick={() => getBeverage(beverage)}
     />
   ));
 

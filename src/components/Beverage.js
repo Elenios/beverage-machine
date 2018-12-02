@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Beverage = (props, { getBeverage }) => (
-  <div className="container section" onClick={getBeverage}>
-    <img alt={props.name} id={props.id} src={require(`../${props.img}`)} />
+const Beverage = (props) => (
+  <div className="container section">
+    <img onClick={props.onClick} alt={props.name} id={props.id} src={require(`../${props.img}`)} />
   </div>
 );
 

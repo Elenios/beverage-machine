@@ -1,6 +1,7 @@
 import React from 'react';
-import Terminal from './components/Terminal';
-import BeverageList from './components/BeverageList';
+import TerminalContainer from './components/TerminalContainer';
+import BeverageContainer from './components/BeverageContainer';
+import FullScreenContainer from './components/FullScreenContainer';
 
 const style = {
   firstLayer: {
@@ -15,10 +16,11 @@ const style = {
 const App = () => (
   <div className="center">
     <h1 className="red-text text-darken-2">Beverage Machine</h1>
+    <FullScreenContainer />
     <div style={ style.firstLayer }>
-      <Terminal />
+      <TerminalContainer />
       <div style={ style.secondLayer }>
-        <BeverageList />
+        <BeverageContainer />
       </div>
     </div>
   </div>

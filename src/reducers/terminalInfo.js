@@ -1,18 +1,16 @@
 const defaultState = {
-  beverageID: null,
+  beverage: {},
 }
 
 const terminalInfo = ( state = defaultState, action ) => {
   switch ( action.type ) {
     case 'SELECT_BEVERAGE':
-    console.log(action.beverageID);
       return Object.assign( {}, state, {
-        beverageID: action.beverageID,        
+        beverage: action.beverage,        
       } );
     default:
       return state;
   }
 };
-
 
 export default terminalInfo;
