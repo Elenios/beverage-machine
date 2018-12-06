@@ -6,7 +6,7 @@ const terminalInfo = ( state = defaultState, action ) => {
   switch ( action.type ) {
     case 'SELECT_BEVERAGE':
       return Object.assign( {}, state, {
-        beverage: action.beverage,        
+        beverage: action.beverage,
       } );
     default:
       return state;

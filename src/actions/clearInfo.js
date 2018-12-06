@@ -1,5 +1,5 @@
 export default function clearInfo() {
   return {
-    type: 'CLEAR_INFO',
+    type: "CLEAR_INFO",
   }
 }

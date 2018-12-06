@@ -5,7 +5,7 @@ import clearInfo from '../actions/clearInfo';
 const mapStateToProps = state => state.fullScreenInfo;
 
 const mapDispatchToProps = dispatch => ({
-  clearInfo: dispatch(clearInfo()),
+  clearInfo: () => dispatch(clearInfo()),
 });
 
 const FullScreenContainer = connect(
