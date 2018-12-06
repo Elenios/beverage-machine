@@ -9,16 +9,15 @@ import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import red from '@material-ui/core/colors/red';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const styles = theme => ({
   card: {
     maxWidth: 400,
   },
-  media: {
-    height: 0,
-    paddingTop: '56.25%', // 16:9
+  content: {
+    display: 'flex',
+    justifyContent: 'center',
   },
   actions: {
     display: 'flex',
@@ -53,10 +52,10 @@ class BeverageCard extends React.Component {
         <CardHeader
           title= {selectedBeverage.name}
         />
-        <CardContent>
-            <img alt={selectedBeverage.name} src={require(`../${selectedBeverage.largeimg}`)} />
+        <CardContent className={classes.content}>
           <Typography component="p">
-            {selectedBeverage.calories}
+          <img alt={selectedBeverage.name} src={require(`../${selectedBeverage.largeimg}`)} />
+          {selectedBeverage.calories}
           </Typography>
         </CardContent>
         <CardActions className={classes.actions} disableActionSpacing>
